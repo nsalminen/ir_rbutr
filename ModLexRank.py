@@ -67,4 +67,4 @@ class ModLexRank(LexRank):
 		sorted_ix = np.argsort(lexrank)[::-1]
 		summary = [self.doc_sentences[i] for i in sorted_ix[:summary_size]]
 
-		return summary	
+		return summary
