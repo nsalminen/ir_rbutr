@@ -3,7 +3,6 @@ from lexrank import STOPWORDS
 from newspaper import Article, Config
 from tqdm import tqdm, trange
 import io
-from contextlib import redirect_stdout
 
 def retrieveUrlText(url):
 	try:
@@ -44,7 +43,7 @@ class SourceArticle(object):
 			else:
 				unsuccessfulRetrievals.append(url)
 		if unsuccessfulRetrievals:
-			print('\033[1m'+"URL retrieval failed for the following URLs:\n" + '\033[0m' + ', '.join(unsuccessfulRetrievals))
+			print('\033[1m'+"URL retrieval failed for URLs: " + '\033[0m' + ', '.join(unsuccessfulRetrievals) + '\r')
 		self.rebutalTextList = [self.rebutalTextList]
 		lxr = ModLexRank(self.rebutalTextList, stopwords=STOPWORDS['en'])
 		summary = lxr.get_summary(summary_size=size, threshold=summary_threshold)

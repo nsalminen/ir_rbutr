@@ -13,7 +13,7 @@ def readDataFile(path, sourceArticleList):
 		content = [x.strip('\n') for x in f] 
 
 	idx = 0
-	pbar = tqdm(total=len(content), unit="line", desc="Reading " + path)
+	pbar = tqdm(total=len(content), unit=" lines", desc="Reading " + path)
 	while idx < len(content):
 		if (content[idx] == 'new node'):
 			idx = idx + 1
@@ -28,7 +28,9 @@ sourceArticleList = list()
 readDataFile("output.txt", sourceArticleList)
 pbar = tqdm(total=len(sourceArticleList), unit="article", desc=("Summarizing " + str(len(sourceArticleList)) + " articles"))
 for idx, val in enumerate(sourceArticleList):
-	summary = sourceArticleList[idx].summarizeRebutals(size=10, summary_threshold = 0.3)
+	summary = sourceArticleList[idx].summarizeRebutals(size=10, summary_threshold = 0.2)
 	with open('summary' + str(idx) + '.txt', mode='wt', encoding='utf-8') as summaryFile:
 		summaryFile.write(' '.join(summary))
 	pbar.update(1)
+	print(summary)
+pbar.close()

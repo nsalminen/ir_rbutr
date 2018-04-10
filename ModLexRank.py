@@ -2,7 +2,8 @@ from lexrank import STOPWORDS, LexRank
 import math
 from collections import Counter, defaultdict
 import nltk
-
+import re
+from urlextract import URLExtract
 import numpy as np
 
 from lexrank.algorithms.power_method import stationary_distribution
@@ -10,6 +11,16 @@ from lexrank.utils.text import tokenize
 
 class ModLexRank(LexRank):
 	"""docstring for ModLexRank"""
+	def validateSentence(self, s):
+		alphaCount = sum(c.isalpha() for c in s)
+		if (alphaCount < 15 or alphaCount > 130):
+			return False
+		extractor = URLExtract()
+		urls = extractor.find_urls(s)
+		if (urls):
+			return False
+		return True
+
 	def __init__(
 		self,
 		documents,
@@ -26,6 +37,7 @@ class ModLexRank(LexRank):
 		self.doc_sentences = list()
 		self.keep_numbers = keep_numbers
 		self.keep_emails = keep_emails
+		self.keep_urls = False
 		self.include_new_words = include_new_words
 
 		bags_of_words = []
@@ -35,6 +47,7 @@ class ModLexRank(LexRank):
 
 			for sentence in doc:
 				articleSentences = nltk.sent_tokenize(sentence)
+				articleSentences[:] = [tup for tup in articleSentences if self.validateSentence(s=tup)]
 				self.doc_sentences = self.doc_sentences + articleSentences
 				words = self.tokenize_sentence(sentence)
 				doc_words.update(words)
