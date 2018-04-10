@@ -43,7 +43,8 @@ class SourceArticle(object):
 				self.rebutalTextList.append(urlText)
 			else:
 				unsuccessfulRetrievals.append(url)
-		print('\033[1m'+"URL retrieval failed for the following URLs:\n" + '\033[0m' + ','.join(unsuccessfulRetrievals))
+		if unsuccessfulRetrievals:
+			print('\033[1m'+"URL retrieval failed for the following URLs:\n" + '\033[0m' + ', '.join(unsuccessfulRetrievals))
 		self.rebutalTextList = [self.rebutalTextList]
 		lxr = ModLexRank(self.rebutalTextList, stopwords=STOPWORDS['en'])
 		summary = lxr.get_summary(summary_size=size, threshold=summary_threshold)
