@@ -1,9 +1,20 @@
 import pandas as pd
 import networkx as nx
+import requests
+from newspaper import Article
+
+
+#write article to file
+def write_article(n, file):
+    article = Article(n)
+    article.download()
+    article.parse()
+    file.write(n + "\n")
+
 
 source = "sourcepage"
 rebuttal = "rebuttalpage"
-data = pd.read_csv("out.tab", sep="\t", header=0, usecols=[source, rebuttal])
+data = pd.read_csv("filtered.tab", sep="\t", header=0, usecols=[source, rebuttal])
 graph = nx.DiGraph()
 edges = zip(data[rebuttal], data[source])
 graph.add_edges_from(edges)
@@ -34,5 +45,18 @@ for i in range(10):
     file.write("new node\n")
     file.write(pair[0] + "\n")
     file.write("list\n")
+    # If the web page is reachable add it to the list
     for n in graph.predecessors(pair[0]):
-        file.write(n + "\n")
+        try:
+            r = requests.head(n)
+            if r.status_code == 302 or r.status_code == 301:
+                r1 = requests.get(n)
+                if r1.status_code == 200:
+                    write_article(n, file)
+            if r.status_code == 200:
+                write_article(n, file)
+        except:
+            continue
+
+
+print("finished")

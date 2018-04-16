@@ -5,27 +5,17 @@ source = "sourcepage"
 rebuttal = "rebuttalpage"
 df = pd.read_csv("data.tab", sep="\t", header=0, usecols=[source, rebuttal])
 
-pdf = ".pdf"
-twitter = "twitter"
-youtube = "youtube"
-rbutr = "http://rbutr.com/fauxNews.html"
-reddit = "reddit"
+blacklist = [".pdf", "twitter", "youtube", "http://rbutr.com/fauxNews.html", "reddit"]
 
-df = df[df.sourcepage.str.contains(youtube) == False]
-df = df[df.sourcepage.str.contains(twitter) == False]
-df = df[df.sourcepage.str.contains(pdf) == False]
-df = df[df.sourcepage.str.contains(reddit) == False]
-df = df[df.sourcepage.str.contains(rbutr) == False]
+for s in blacklist:
+    df = df[df.sourcepage.str.contains(s) == False]
+    df = df[df.rebuttalpage.str.contains(s) == False]
 
-df = df[df.rebuttalpage.str.contains(youtube) == False]
-df = df[df.rebuttalpage.str.contains(twitter) == False]
-df = df[df.rebuttalpage.str.contains(pdf) == False]
-df = df[df.rebuttalpage.str.contains(reddit) == False]
-df = df[df.rebuttalpage.str.contains(rbutr) == False]
-
-df.to_csv("out.tab", sep="\t")
+df.to_csv("filtered.tab", sep="\t")
 
 # Possible check for unreachable web pages
+# Note that this will take a long time and does only
+# idicate the unreachable webpages and does not remove the entries.
 
 # dfc = df
 # counter = 0

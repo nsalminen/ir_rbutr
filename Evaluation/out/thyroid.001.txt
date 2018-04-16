@@ -1,0 +1,32 @@
+---------------------------------------------
+thyroid ROUGE-1 Average_R: 0.38144 (95%-conf.int. 0.38144 - 0.38144)
+thyroid ROUGE-1 Average_P: 0.43191 (95%-conf.int. 0.43191 - 0.43191)
+thyroid ROUGE-1 Average_F: 0.40511 (95%-conf.int. 0.40511 - 0.40511)
+---------------------------------------------
+thyroid ROUGE-2 Average_R: 0.04931 (95%-conf.int. 0.04931 - 0.04931)
+thyroid ROUGE-2 Average_P: 0.05584 (95%-conf.int. 0.05584 - 0.05584)
+thyroid ROUGE-2 Average_F: 0.05237 (95%-conf.int. 0.05237 - 0.05237)
+---------------------------------------------
+thyroid ROUGE-3 Average_R: 0.00459 (95%-conf.int. 0.00459 - 0.00459)
+thyroid ROUGE-3 Average_P: 0.00520 (95%-conf.int. 0.00520 - 0.00520)
+thyroid ROUGE-3 Average_F: 0.00488 (95%-conf.int. 0.00488 - 0.00488)
+---------------------------------------------
+thyroid ROUGE-4 Average_R: 0.00115 (95%-conf.int. 0.00115 - 0.00115)
+thyroid ROUGE-4 Average_P: 0.00130 (95%-conf.int. 0.00130 - 0.00130)
+thyroid ROUGE-4 Average_F: 0.00122 (95%-conf.int. 0.00122 - 0.00122)
+---------------------------------------------
+thyroid ROUGE-L Average_R: 0.36197 (95%-conf.int. 0.36197 - 0.36197)
+thyroid ROUGE-L Average_P: 0.40986 (95%-conf.int. 0.40986 - 0.40986)
+thyroid ROUGE-L Average_F: 0.38443 (95%-conf.int. 0.38443 - 0.38443)
+---------------------------------------------
+thyroid ROUGE-W-1.2 Average_R: 0.07735 (95%-conf.int. 0.07735 - 0.07735)
+thyroid ROUGE-W-1.2 Average_P: 0.17537 (95%-conf.int. 0.17537 - 0.17537)
+thyroid ROUGE-W-1.2 Average_F: 0.10735 (95%-conf.int. 0.10735 - 0.10735)
+---------------------------------------------
+thyroid ROUGE-S* Average_R: 0.13847 (95%-conf.int. 0.13847 - 0.13847)
+thyroid ROUGE-S* Average_P: 0.17756 (95%-conf.int. 0.17756 - 0.17756)
+thyroid ROUGE-S* Average_F: 0.15560 (95%-conf.int. 0.15560 - 0.15560)
+---------------------------------------------
+thyroid ROUGE-SU* Average_R: 0.13903 (95%-conf.int. 0.13903 - 0.13903)
+thyroid ROUGE-SU* Average_P: 0.17822 (95%-conf.int. 0.17822 - 0.17822)
+thyroid ROUGE-SU* Average_F: 0.15620 (95%-conf.int. 0.15620 - 0.15620)

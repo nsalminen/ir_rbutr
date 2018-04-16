@@ -1,0 +1,32 @@
+---------------------------------------------
+fluoridation ROUGE-1 Average_R: 0.39359 (95%-conf.int. 0.39359 - 0.39359)
+fluoridation ROUGE-1 Average_P: 0.47253 (95%-conf.int. 0.47253 - 0.47253)
+fluoridation ROUGE-1 Average_F: 0.42946 (95%-conf.int. 0.42946 - 0.42946)
+---------------------------------------------
+fluoridation ROUGE-2 Average_R: 0.07339 (95%-conf.int. 0.07339 - 0.07339)
+fluoridation ROUGE-2 Average_P: 0.08815 (95%-conf.int. 0.08815 - 0.08815)
+fluoridation ROUGE-2 Average_F: 0.08010 (95%-conf.int. 0.08010 - 0.08010)
+---------------------------------------------
+fluoridation ROUGE-3 Average_R: 0.00920 (95%-conf.int. 0.00920 - 0.00920)
+fluoridation ROUGE-3 Average_P: 0.01105 (95%-conf.int. 0.01105 - 0.01105)
+fluoridation ROUGE-3 Average_F: 0.01004 (95%-conf.int. 0.01004 - 0.01004)
+---------------------------------------------
+fluoridation ROUGE-4 Average_R: 0.00000 (95%-conf.int. 0.00000 - 0.00000)
+fluoridation ROUGE-4 Average_P: 0.00000 (95%-conf.int. 0.00000 - 0.00000)
+fluoridation ROUGE-4 Average_F: 0.00000 (95%-conf.int. 0.00000 - 0.00000)
+---------------------------------------------
+fluoridation ROUGE-L Average_R: 0.37529 (95%-conf.int. 0.37529 - 0.37529)
+fluoridation ROUGE-L Average_P: 0.45055 (95%-conf.int. 0.45055 - 0.45055)
+fluoridation ROUGE-L Average_F: 0.40949 (95%-conf.int. 0.40949 - 0.40949)
+---------------------------------------------
+fluoridation ROUGE-W-1.2 Average_R: 0.09784 (95%-conf.int. 0.09784 - 0.09784)
+fluoridation ROUGE-W-1.2 Average_P: 0.22208 (95%-conf.int. 0.22208 - 0.22208)
+fluoridation ROUGE-W-1.2 Average_F: 0.13584 (95%-conf.int. 0.13584 - 0.13584)
+---------------------------------------------
+fluoridation ROUGE-S* Average_R: 0.15010 (95%-conf.int. 0.15010 - 0.15010)
+fluoridation ROUGE-S* Average_P: 0.21644 (95%-conf.int. 0.21644 - 0.21644)
+fluoridation ROUGE-S* Average_F: 0.17727 (95%-conf.int. 0.17727 - 0.17727)
+---------------------------------------------
+fluoridation ROUGE-SU* Average_R: 0.15121 (95%-conf.int. 0.15121 - 0.15121)
+fluoridation ROUGE-SU* Average_P: 0.21784 (95%-conf.int. 0.21784 - 0.21784)
+fluoridation ROUGE-SU* Average_F: 0.17851 (95%-conf.int. 0.17851 - 0.17851)

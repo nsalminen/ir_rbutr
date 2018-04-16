@@ -1,0 +1,32 @@
+---------------------------------------------
+gerson ROUGE-1 Average_R: 0.49493 (95%-conf.int. 0.49493 - 0.49493)
+gerson ROUGE-1 Average_P: 0.40470 (95%-conf.int. 0.40470 - 0.40470)
+gerson ROUGE-1 Average_F: 0.44529 (95%-conf.int. 0.44529 - 0.44529)
+---------------------------------------------
+gerson ROUGE-2 Average_R: 0.07953 (95%-conf.int. 0.07953 - 0.07953)
+gerson ROUGE-2 Average_P: 0.06501 (95%-conf.int. 0.06501 - 0.06501)
+gerson ROUGE-2 Average_F: 0.07154 (95%-conf.int. 0.07154 - 0.07154)
+---------------------------------------------
+gerson ROUGE-3 Average_R: 0.00847 (95%-conf.int. 0.00847 - 0.00847)
+gerson ROUGE-3 Average_P: 0.00693 (95%-conf.int. 0.00693 - 0.00693)
+gerson ROUGE-3 Average_F: 0.00762 (95%-conf.int. 0.00762 - 0.00762)
+---------------------------------------------
+gerson ROUGE-4 Average_R: 0.00000 (95%-conf.int. 0.00000 - 0.00000)
+gerson ROUGE-4 Average_P: 0.00000 (95%-conf.int. 0.00000 - 0.00000)
+gerson ROUGE-4 Average_F: 0.00000 (95%-conf.int. 0.00000 - 0.00000)
+---------------------------------------------
+gerson ROUGE-L Average_R: 0.47128 (95%-conf.int. 0.47128 - 0.47128)
+gerson ROUGE-L Average_P: 0.38536 (95%-conf.int. 0.38536 - 0.38536)
+gerson ROUGE-L Average_F: 0.42401 (95%-conf.int. 0.42401 - 0.42401)
+---------------------------------------------
+gerson ROUGE-W-1.2 Average_R: 0.10983 (95%-conf.int. 0.10983 - 0.10983)
+gerson ROUGE-W-1.2 Average_P: 0.18044 (95%-conf.int. 0.18044 - 0.18044)
+gerson ROUGE-W-1.2 Average_F: 0.13655 (95%-conf.int. 0.13655 - 0.13655)
+---------------------------------------------
+gerson ROUGE-S* Average_R: 0.23654 (95%-conf.int. 0.23654 - 0.23654)
+gerson ROUGE-S* Average_P: 0.15810 (95%-conf.int. 0.15810 - 0.15810)
+gerson ROUGE-S* Average_F: 0.18952 (95%-conf.int. 0.18952 - 0.18952)
+---------------------------------------------
+gerson ROUGE-SU* Average_R: 0.23741 (95%-conf.int. 0.23741 - 0.23741)
+gerson ROUGE-SU* Average_P: 0.15878 (95%-conf.int. 0.15878 - 0.15878)
+gerson ROUGE-SU* Average_F: 0.19029 (95%-conf.int. 0.19029 - 0.19029)
