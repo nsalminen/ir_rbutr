@@ -1,5 +1,5 @@
 lexrank==0.0.1b0
-numpy==1.13.3
+numpy==1.22.0
 tqdm==4.21.0
 nltk==3.4.5
 urlextract==0.8.3
